@@ -1,0 +1,10 @@
+http://mutable-instruments.net/shruthi1
+
+CHanger le firmware pour :
+	+ Enregistrer l'association entre un LFO/un synthé à un arpégiator
+Q? :
+	+ Le test ? environnement de test ?
+		-> dévellopé une version logiciel du machin.
+	+ Télécharger le code.
+
+Info : 5 ou 7 menus avec 5 ou 7 fonctions /menu

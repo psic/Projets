@@ -1,0 +1,62 @@
+TODO:
+
++ écrire le projet
++ Matos : 10 ou 11 PC, un vidéo proj, 11 cables réseau 10 à 15m, un ou deux routeur
++ Trouver un linux pour le enfants (mail, Texte, gestionnaire de fichier, programmation simple ...?)
++ Projet @Mairie, @Conseil Général ...
++ Faire relire le projet à Leila et à Martine
++ Projet @Asus, @HP ...
++ Projet @April et GUILD
+
+10 Séances de 1h pour 10 personnes
+
+1) Ordinateur ?
+- temps d'échange sur les connaissances informatique de base
+- Périphériques
+--> Activité découpage collage : nécéssite 10 polycopieé représentant un ordinateur en pièce détaché a recomposé
+
+2) Architecture
+- Description de l'architecture de base : processeur, carte graphique, mémoire, DD, carte réseau, ... ?)
+--> Activité pédagogique simulation d'un ordinateur par groupe de 5 (2 groupes donc 2 ordinateurs) :
+    + Le prof donne des calculs simple à faire : 3 calculs à la suite
+    + Dans chaque groupe 1 élève processeur, 1 élève affichage/Clavier, 3 élve mémoire
+    + Un éléve transmet (fonction clavier en écrivant le calcul sur une feuille) le calcul au processeur (un autre éléve) et l'écrit au tableau (fonction d'affichage)
+    + Le processeur effectue le calcul et le dit a la mémoire A (un élève) et à l'affichage
+    + Deuxième calcul mémoire B
+    + Troisième calcul mémoire C
+    + Le prof demande l'addition de A+B+C
+    + Calcul du resultat et transmission à l'affichage
+    + Un élève joue le role de carte réseau et transmet les résultat d'un ordinateur à l'autre
+
+A revoir...
+
+3) Architecture 2
+- Les octets
+--> Activité pédagogique à trouver
+
+4) Logiciel (Machines)
+- échange sur les logiciels connus
+- Système d'exploitation
+- Les grandes fonction : système de fichier, réseau, ...
+--> Activité pédagogique sur les ordinateurs , découverte libre, dessin
+
+5) Utilisation du traitement de texte (Machines)
+
+6) Internet
+- Principe de base : IP, DNS, divers protocole
+--> Simulation d'un réseau (utilisation de fil de laine)
+  + IP & DHCP
+  + HTTP et mail 
+
+... A affiner ...
+
+7) Réseau & Internet TP (Machine)
+- En réseau local faire de l'internet
+- du mail
+- de la messagerie jabber
+
+8) Logiciel spécifique (Machines)
+
+9) Programation (Machines)
+
+10) Programation (Machines)

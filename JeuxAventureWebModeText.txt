@@ -1,0 +1,9 @@
+Faire un jeux d'aventure sur le web en mode texte façon livre dont vous êtes le héros
+
+Les interaction se font soit via l'URL soit via une interface simple
+
+http://lejeux.fr/piece/ --> vous êtes dans un pièce noire
+		/piece/search --> il fait noir
+		      /allume --> la lumière s'allume
+
+Un certain nombre d'action de base : ouvrir, parler, se baisser, monter, chercher, etc.. et des actions supplémentaires

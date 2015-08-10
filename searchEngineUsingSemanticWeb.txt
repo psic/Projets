@@ -1,0 +1,21 @@
+Un moteur de recherche qui s'appuie sur les technologie du web sématique.
++ Utilisant le langage de requête SPARQL, notament dans l'interface de recherche
++ Faisant des suggestions en s'appuyant sur les propriétées des objets owl
+
+--> Capable de répondre à la question à la question "Qui sont les personnes nées le 15 juin ?"
+
+
+
+
+* Une interface de requête
+- Requête SPARQL et alignement
+- Pour un objet, pouvoir proposer toute les propriétés existantes
+
+
+
+* Un moteur d'indexation "Big Data" pour le web semantic
+- indexer tout le web sémantique
+- Aligner le tout
+- Indexer et sémantisé le reste du web
+- Aligner le tout
+- Avoir un index inversé ?

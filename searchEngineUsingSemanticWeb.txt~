@@ -1,0 +1,15 @@
+Un moteur de recherche qui s'appuie sur les technologie du web sématique.
++ Utilisant le langage de requête SPARQL, notament dans l'interface de recherche
++ Faisant des suggestions en s'appuyant sur les propriétées des objets owl
+
+--> Capable de répondre à la question à la question "Qui sont les personnes nées le 15 juin ?"
+
+
+
+
+* Une interface de requête
+
+
+
+
+* Un moteur d'indexation "Big Data" pour le web semantic

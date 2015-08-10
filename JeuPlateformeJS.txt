@@ -1,0 +1,15 @@
+Faire un jeu de puzzle en js.
+Principe : faire rentré une boule dans un trou.
+On ne peut diriger la boule que si elle est arretée (4 directions possibles).
+La boule s'arrête quand elle tape un obstacle.
+
+Thème football : aller d'un joueur avec la balle jusqu'au but.
+obstacle => mes cooepquipiers.
+Contre personne
+Contre des joueur qui bouge pas ou pas (ballon interceptes)
+avec des coequipier qui bouge
+en moins de passe possible
+contre la montre
+etc, etc.
+
+Avoir des sprites (ou images) de joueurs vu du dessus : le joueurs est toujours orienté vers le ballon.

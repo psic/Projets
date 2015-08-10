@@ -1,0 +1,9 @@
+Faire un méta moteur de recherche pour le bon coin immobilier (et d'autre après) en intégrant la proximité par rapport à une ville : à 5km, 10km, 30km, 50km, 100km d'un ville donnée.
++ Avoir pour une ville, la liste de toute les villes dans le rayon choisi
+	* Précalculé un fichier pour chaque rayon :
+		ID ville (numero INSEE), ..., liste de ville dans le rayon
+		(commencé par le rayon le plus petit pour ne pas refaire tout les calculs).
+	* Faire un site web avec fichier telechargeable (opendata mec!) et une api pour récupérer pour une ville données.	
++ Intérogé le site du bon coin pour chacune de ces villes (avec les critéres immo en plus (m², nb piece, prix,...)
++ Récupérer les réponses
++ Les intégré (comment ?) dans un site web ? (Attention au droit)

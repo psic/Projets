@@ -1,0 +1,52 @@
+Sur la base du jeu Football super Tactic Puzzle, faire des un contre un.
+Chaque joueur à 5 secondes pour "programmer" ses actions
+On s'arrete au premier arrivé à 3.
+
+Réseau : 
+On crée un partie => Un url
+Le premier qui se connecte a les bleus
+le second qui se connecte à les rouges
+
+bleus fait ses actions.
+rouges reçoit les motifs
+rouges reçoit fait ses actions.
+etc...
+
+
+Super Smach Crazy Football Robot Frenzy
+
+Page d'accueil : 
+Mail
+Mail du partenaire
+Bouton : générer partie!
+ça envoie un mail au deux avec l'url de la partie valable 15min
+
+Identifiant du joueur dans la partie : IP + nom + ou juste id de session
+
+Principe de jeu :
+On joue 7x7.
+Au début du jeu on a 15 secondes pour placer ces joeurs.
+Chaque joueur à 15 secondes pour programer ses déplacements
+Au bout de ce temps, les actions son résolue en commençant par la première de l'équipe qui à le ballon, puis la première de l'autre équipe, puis la seconde de l'équipe qui à le ballon, puis la seconde action de l'autre équipe , etc.
+Les actions en cours de programmation s'affiche d'un écran sur l'autre, je vois ce que mon adversaire programme.
+
+Mouvements possibles :
+Chaque joueur peut réaliser autant d'action qu'il veut dans la limite de déplacement de ses bonhomes
+Deplacement : 3 cases sans ballon, 2 case avec ballon + 1 boost par tour
+Seul les déplacement orthogonaux sont possibles
+Dribles : Quand on passe (résolu quand on sort de la case)sur la case d'un joueur adverse (Automatique)
+Duel : Quand on reste sur la case d'un autre joueur (Automatique)
+Tackles : Quand on passe dans la zone de tackle d'un adversaire (résolu quand on sort de cette zone (la crois qui entour le defénseur). Possibilité de faute et de coup franc (Automatique)
+Passe (+reception de balle) : On passe vers un case. Proba + Proba de reception
+Tir : On vise un case + Proba
+Tourner autour du ballon : Orienter son joueur autour du ballon pour le positionner dans le sens de la passe, du tir, ou en protection pour un duel
+
+Quand une action amène une perte de balle, si le joueur avait d'autre action, elle ne se feront pas, pas contre, les autres actions des joueurs de la même équipe se feront.
+
+Les coups de pied arrétés : ??
+
+Page de jeu : 
+
+On joue.
+On déplace ses joueurs à la souris. Chaque déplacement ajoute une déplacement dans sa liste d'action (element clickable que l'on peut annuler). Les anciennes positions apparaissent dans une couleur plus foncé. Le rendu est le meme pour les deux joueurs.
+Chrono. Au bout de 15 secondes, ça joue.
