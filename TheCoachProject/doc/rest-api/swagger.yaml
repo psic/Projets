@@ -1,0 +1,477 @@
+---
+swagger: "2.0"
+info:
+  version: "0.5.0"
+  title: "Coach Project"
+host: "localhost"
+produces:
+- "application/json"
+paths:
+  /competitions:
+    get:
+      description: "Get all the championships"
+      responses:
+        200:
+          description: "successful operation"
+        schema: {}
+  /competitions/{id_competition}:
+    get:
+      parameters:
+      - name: "id_competition"
+        in: "path"
+        description: "choosen competition."
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "competition not found"
+  /competitions/{id_competition}/{id_club}:
+    post:
+      parameters:
+      - name: "id_competition"
+        in: "path"
+        description: "choosen competition."
+        required: true
+        type: "integer"
+      - name: "id_club"
+        in: "path"
+        description: "choosen club."
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "competition not found or club not found"
+  /game/{id_game}/club/{id_club}:
+    get:
+      description: "Get information about a club"
+      parameters:
+      - name: "id_game"
+        in: "path"
+        description: "the game in which the user evolve"
+        required: true
+        type: "integer"
+      - name: "id_club"
+        in: "path"
+        description: "the choosen club. ** If none, we get the detail of the user\
+          \ **"
+        required: false
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "xxx not found"
+  /game/{id_game}/club/{id_club}/lineup:
+    get:
+      description: "Get the last lineup for a club"
+      parameters:
+      - name: "id_game"
+        in: "path"
+        description: "the game in which the user evolve"
+        required: true
+        type: "integer"
+      - name: "id_club"
+        in: "path"
+        description: "the choosen club. ** If none, we get the last lineup of the\
+          \ user **"
+        required: false
+        type: "inter"
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "xxx not found"
+  /game/{id_game}/declaration/{id_news}:
+    post:
+      description: "make a declaration"
+      parameters:
+      - name: "id_game"
+        in: "path"
+        description: "the game in which the user evolve"
+        required: true
+        type: "integer"
+      - in: "body"
+        name: "declaration"
+        description: "the declaration"
+        required: true
+      - name: "id_news"
+        in: "path"
+        description: "the news which the declaration is about"
+        required: false
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "xxx not found"
+  /game/{id_game}/fame:
+    get:
+      description: "Get the fame of the user"
+      parameters:
+      - name: "id_game"
+        in: "path"
+        description: "the game in which the user evolve"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "xxx not found"
+  /game/{id_game}/friendly/{id_instance_club}/{isAccepted}:
+    post:
+      description: "ask for a friendly match on the next available free slot for a\
+        \ match"
+      parameters:
+      - name: "id_game"
+        in: "path"
+        description: "the game in which the user evolve"
+        required: true
+        type: "integer"
+      - name: "id_instance_club"
+        in: "path"
+        description: "the club (its instance in this game) to which the user propose\
+          \ the match"
+        required: true
+        type: "integer"
+      - name: "isAccepted"
+        in: "path"
+        description: "true if we accept the friendly match on the next slot against\
+          \ this team, false if not."
+        required: false
+        type: "boolean"
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "xxx not found"
+  /game/{id_game}/game_fame:
+    get:
+      description: "Get the game fame of the user"
+      parameters:
+      - name: "id_game"
+        in: "path"
+        description: "the game in which the user evolve"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "xxx not found"
+  /game/{id_game}/lineup/tactic/{tactic}:
+    get:
+      description: "Get the tactic option of the user's team for the next match"
+      parameters:
+      - name: "id_game"
+        in: "path"
+        description: "the game in which the user evolve"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "xxx not found"
+    put:
+      description: "Change the tactic option of the user's team for the next match"
+      parameters:
+      - name: "id_game"
+        in: "path"
+        description: "the game in which the user evolve"
+        required: true
+        type: "integer"
+      - name: "tactic"
+        in: "path"
+        description: "the tactic option 0= defensive, 1=neutral 2=offensive"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "xxx not found"
+  /game/{id_game}/lineup/{id_instance_player}/{position}:
+    get:
+      description: "Get the lineup of the user for the next match"
+      parameters:
+      - name: "id_game"
+        in: "path"
+        description: "the game in which the user evolve"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "xxx not found"
+    post:
+      description: "Add a player to the lineup"
+      parameters:
+      - name: "id_game"
+        in: "path"
+        description: "the game in which the user evolve"
+        required: true
+        type: "integer"
+      - name: "id_instance_player"
+        in: "path"
+        description: "the id of the player added to the lineup"
+        required: true
+        type: "integer"
+      - name: "position"
+        in: "path"
+        description: "the position (1 - 27) where the player is added on the field."
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "xxx not found"
+    put:
+      description: "Change position of a player on the field"
+      parameters:
+      - name: "id_game"
+        in: "path"
+        description: "the game in which the user evolve"
+        required: true
+        type: "integer"
+      - name: "id_instance_player"
+        in: "path"
+        description: "the id of the player moved"
+        required: true
+        type: "integer"
+      - name: "position"
+        in: "path"
+        description: "the new position (1 - 27) where the player is added on the field."
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "xxx not found"
+    delete:
+      description: "Remove player from field"
+      parameters:
+      - name: "id_game"
+        in: "path"
+        description: "the game in which the user evolve"
+        required: true
+        type: "integer"
+      - name: "id_instance_player"
+        in: "path"
+        description: "the id of the player removed from the lineup"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "xxx not found"
+  /game/{id_game}/matches:
+    get:
+      description: "List of all the matches for user in this game"
+      parameters:
+      - name: "id_game"
+        in: "path"
+        description: "the game in which the user evolve"
+        required: true
+        type: "integer"
+      - name: "competition"
+        in: "query"
+        description: "get all the matches for a given competition"
+        required: false
+        type: "integer"
+      - name: "date"
+        in: "query"
+        description: "get all the matches for one day (date in game)"
+        required: false
+        type: "string"
+        format: "date"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              type: "object"
+              properties:
+                imageURL:
+                  type: "string"
+                name:
+                  type: "string"
+                id:
+                  type: "integer"
+        404:
+          description: "game not found"
+  /game/{id_game}/matches/{id_match}:
+    get:
+      description: "Detail of a match"
+      parameters:
+      - name: "id_game"
+        in: "path"
+        description: "the game in which the user evolve"
+        required: true
+        type: "integer"
+      - name: "id_match"
+        in: "path"
+        description: "the match we want to see"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "xxx not found"
+  /game/{id_game}/news:
+    get:
+      description: "List of all unread news by the user"
+      parameters:
+      - name: "id_game"
+        in: "path"
+        description: "the game in which the user evolve"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "xxx not found"
+  /game/{id_game}/news/count:
+    get:
+      description: "Number of unread news by the user"
+      parameters:
+      - name: "id_game"
+        in: "path"
+        description: "the game in which the user evolve"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "xxx not found"
+  /game/{id_game}/players/search:
+    get:
+      description: "Search for an instance player"
+      parameters:
+      - name: "id_game"
+        in: "path"
+        description: "the game in which the user evolve"
+        required: true
+        type: "integer"
+      - name: "name"
+        in: "query"
+        description: "the name of the player to get its instance in the game"
+        required: false
+        type: "string"
+      - name: "isInterested"
+        in: "query"
+        description: "is the player interested by user's club (default:false)"
+        required: false
+        type: "boolean"
+      - name: "position"
+        in: "query"
+        description: "filter by player position (1-57)"
+        required: false
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "xxx not found"
+  /game/{id_game}/players/{id_instance_player}:
+    get:
+      description: "Get the detail of a player"
+      parameters:
+      - name: "id_game"
+        in: "path"
+        description: "the game in which the user evolve"
+        required: true
+        type: "integer"
+      - name: "id_instance_player"
+        in: "path"
+        description: "the id of the instance player to get the data"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "xxx not found"
+  /game/{id_game}/table/{id_instance_competition}:
+    get:
+      description: "Get the table for a competition"
+      parameters:
+      - name: "id_game"
+        in: "path"
+        description: "the game in which the user evolve"
+        required: true
+        type: "integer"
+      - name: "id_instance_competition"
+        in: "path"
+        description: "the competition which user want to see the table"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "xxx not found"
+  /game/{id_game}/transfert/player/{id_instance_player}:
+    post:
+      description: "Make an offer to buy the instance player"
+      parameters:
+      - name: "id_game"
+        in: "path"
+        description: "the game in which the user evolve"
+        required: true
+        type: "integer"
+      - name: "id_instance_player"
+        in: "path"
+        description: "the player to buy"
+        required: true
+        type: "integer"
+      - in: "body"
+        name: "amount"
+        description: "the amount of money to get the player"
+        required: true
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "xxx not found"
+  /game/{id_game}/transfert/{id_offer}/{isAccepted}:
+    post:
+      description: "Negociate, accept, or refuse a transfert offer"
+      parameters:
+      - name: "id_game"
+        in: "path"
+        description: "the game in which the user evolve"
+        required: true
+        type: "integer"
+      - name: "id_offer"
+        in: "path"
+        description: "the offer to accepted, negociated or refused"
+        required: true
+        type: "integer"
+      - in: "body"
+        name: "amount"
+        description: "the amount of money to get the player"
+        required: false
+      - name: "isAccepted"
+        in: "path"
+        description: "true if offer is accepted, false is refused"
+        required: false
+        type: "boolean"
+      responses:
+        200:
+          description: "successful operation"
+        404:
+          description: "xxx not found"
+definitions: {}

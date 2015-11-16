@@ -1,15 +1,16 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=latex 2015.3.30)  30 JUL 2015 13:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2014.10.8)  29 AUG 2015 19:26
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **propal.tex
 (./propal.tex
-LaTeX2e <2014/05/01>
-Babel <3.9l> and hyphenation patterns for 79 languages loaded.
-(/home/psic/texlive/texmf-dist/tex/latex/base/report.cls
-Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
-(/home/psic/texlive/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 2 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -24,20 +25,20 @@ File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/home/psic/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2014/04/30 v1.2b Input encoding file
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-(/home/psic/texlive/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/home/psic/texlive/texmf-dist/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
@@ -186,8 +187,8 @@ File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/home/psic/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00B8 (decimal 184)
@@ -217,8 +218,8 @@ File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/home/psic/texlive/texmf-dist/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -241,33 +242,46 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/home/psic/texlive/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/home/psic/texlive/texmf-dist/tex/latex/base/t1enc.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-(/home/psic/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2014/09/25 3.9l The Babel package
+(/home/musik/texmf/tex/generic/babel/babel.sty
+Package: babel 2015/08/03 3.9m The Babel package
 
-(/home/psic/texlive/texmf-dist/tex/generic/babel-french/frenchb.ldf
-Language: frenchb 2014/10/25 v3.1c French support from the babel system
+(/home/musik/texmf/tex/generic/babel/switch.def
+File: switch.def 2015/08/03 3.9m Babel switching mechanism
+)
+(/home/musik/texmf/tex/generic/babel-french/frenchb.ldf
+Language: frenchb 2015/08/19 v3.1h French support from the babel system
 
-(/home/psic/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2014/09/25 3.9l Babel common definitions
+(/home/musik/texmf/tex/generic/babel/babel.def
+File: babel.def 2015/08/03 3.9m Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 )
+\l@french = a dialect from \language\l@nohyphenation 
+
+
+Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language `French' into the format.
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for \language=nohyphenation instead on input l
+ine 75.
+
 \l@acadian = a dialect from \language\l@french 
 \l@canadien = a dialect from \language\l@french 
 \FBcolonskip=\skip43
 \FBthinskip=\skip44
 \FB@interchartokenstateORI=\count89
-Package babel Info: Making : an active character on input line 371.
-Package babel Info: Making ; an active character on input line 372.
-Package babel Info: Making ! an active character on input line 373.
-Package babel Info: Making ? an active character on input line 374.
+Package babel Info: Making : an active character on input line 353.
+Package babel Info: Making ; an active character on input line 354.
+Package babel Info: Making ! an active character on input line 355.
+Package babel Info: Making ? an active character on input line 356.
 \FBguillskip=\skip45
 \FBguill@level=\count90
 \FB@Mht=\dimen104
@@ -277,35 +291,34 @@ Package babel Info: Making ? an active character on input line 374.
 \labelwidthFB=\skip47
 \leftmarginFB=\skip48
 \parindentFFN=\dimen105
-))
-(/home/psic/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
-(/home/psic/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+)) (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
 ) (./propal.aux)
 \openout1 = `propal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Info: Redefining \degres on input line 68.
-LaTeX Info: Redefining \dots on input line 68.
-LaTeX Info: Redefining \up on input line 68.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Info: Redefining \degres on input line 25.
+LaTeX Info: Redefining \dots on input line 25.
+LaTeX Info: Redefining \up on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 69.
+(Font)              <12> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 69.
+(Font)              <8> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 69.
+(Font)              <6> on input line 26.
 
 [1
 
@@ -313,6 +326,18 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 Chapitre 1.
+
+Overfull \hbox (27.8698pt too wide) in paragraph at lines 34--35
+[]\T1/cmr/m/n/10.95 L'informatique un outil de plus en plus important dans nos 
+vies professionnelles,
+ []
+
+
+Overfull \hbox (13.77136pt too wide) in paragraph at lines 34--35
+\T1/cmr/m/n/10.95 système d'exploitation, traitement texte et mail. La plupart 
+de ces connaissances
+ []
+
 [2
 
 ] [3
@@ -323,16 +348,22 @@ Chapitre 2.
 
 ]
 Chapitre 3.
+
+Overfull \hbox (11.22824pt too wide) in paragraph at lines 45--48
+[]\T1/cmr/m/n/10.95 - temps d'échange sur les connaissances informatique de bas
+e - Périphériques
+ []
+
 [5
 
 ] [6] (./propal.aux) ) 
 Here is how much of TeX's memory you used:
- 1758 strings out of 493110
- 21697 string characters out of 6137276
- 84827 words of memory out of 5000000
- 5250 multiletter control sequences out of 15000+600000
+ 1774 strings out of 495029
+ 21927 string characters out of 6181523
+ 80313 words of memory out of 5000000
+ 5009 multiletter control sequences out of 15000+600000
  13627 words of font info for 33 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 28i,6n,30p,790b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 14 hyphenation exceptions out of 8191
+ 28i,6n,30p,525b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on propal.dvi (8 pages, 4684 bytes).
+Output written on propal.dvi (8 pages, 4608 bytes).
